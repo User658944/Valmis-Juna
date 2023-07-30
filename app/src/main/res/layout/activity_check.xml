@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/greenbr"
+    android:scaleType="centerCrop">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/junanroHeadline"
+                android:textSize="18dp"
+                android:text="JUNA"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pvmHeadline"
+                android:textSize="18dp"
+                android:text="01.01.2023"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/virroitinView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/virroitinIcon"
+                    android:src="@drawable/baseline_electric_bolt_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxVirroitin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/virroitinText"
+                    android:layout_toEndOf="@+id/virroitinIcon"
+                    android:text="virroitin / Moottori"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Virroitinasettelu\nkäyntikunto"
+                    android:layout_toEndOf="@+id/virroitinIcon"
+                    android:layout_below="@+id/virroitinText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeVirroitin"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxVirroitin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/junapuhelinView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/junapuhelinIcon"
+                    android:src="@drawable/baseline_contact_phone_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxJunapuhelin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/junapuhelinText"
+                    android:layout_toEndOf="@+id/junapuhelinIcon"
+                    android:text="Junapuhelin"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kirjautumisrooli\npuheryhmä"
+                    android:layout_toEndOf="@+id/junapuhelinIcon"
+                    android:layout_below="@+id/junapuhelinText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeJunapuhelin"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxJunapuhelin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/jarrutView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jarrutIcon"
+                    android:src="@drawable/baseline_brightness_1_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxJarrut"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/jarrutText"
+                    android:layout_toEndOf="@+id/jarrutIcon"
+                    android:text="Jarrut"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jarrujen testaus\njarrulaji"
+                    android:layout_toEndOf="@+id/jarrutIcon"
+                    android:layout_below="@+id/jarrutText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeJarrut"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxJarrut"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/jkvView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jkvIcon"
+                    android:src="@drawable/baseline_crop_16_9_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxJkv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/jkvText"
+                    android:layout_toEndOf="@+id/jkvIcon"
+                    android:text="JKV"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="testaus\ntietojen syöttö"
+                    android:layout_toEndOf="@+id/jkvIcon"
+                    android:layout_below="@+id/jkvText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeJkv"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxJkv"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mobiilipuhelinView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobiilipuhelinIcon"
+                    android:src="@drawable/baseline_phone_android_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxMobiilipuhelin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mobiilipuhelinText"
+                    android:layout_toEndOf="@+id/mobiilipuhelinIcon"
+                    android:text="Kenttä"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="veturiviat\nvertaa vaununumerot\njarrutietojen kuittaus\nkaluston nopeusrajoitukset"
+                    android:layout_toEndOf="@+id/mobiilipuhelinIcon"
+                    android:layout_below="@+id/mobiilipuhelinText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeMobiilipuhelin"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxMobiilipuhelin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lahtolupaView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lahtolupaIcon"
+                    android:src="@drawable/baseline_traffic_24"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxLahtolupa"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/lahtolupaText"
+                    android:layout_toEndOf="@+id/lahtolupaIcon"
+                    android:text="Lähtölupa"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lähtölupa vastaanotettu"
+                    android:layout_toEndOf="@+id/lahtolupaIcon"
+                    android:layout_below="@+id/lahtolupaText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeLahtolupa"
+                    android:textSize="12dp"
+                    android:layout_toLeftOf="@+id/checkboxLahtolupa"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="4dp"
+            android:elevation="200dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/svpView"
+                    android:background="@color/gray"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/svpIcon"
+                    android:src="@drawable/baseline_train_icon"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkboxSvp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/svpText"
+                    android:layout_toEndOf="@+id/svpIcon"
+                    android:text="Suunta / Valot / Peilit"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="suunta ja valoasettelu\ntarkista peilit"
+                    android:layout_toEndOf="@+id/svpIcon"
+                    android:layout_below="@+id/svpText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventTimeSvp"
+                    android:layout_toLeftOf="@+id/checkboxSvp"
+                    android:layout_centerVertical="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/purple_700"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/ready"
+            android:text="✔"
+            android:textSize="30dp"
+            android:layout_marginTop="6dp"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

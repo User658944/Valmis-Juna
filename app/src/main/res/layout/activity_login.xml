@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/greenbr"
+    android:paddingTop="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="14dp"
+        android:elevation="200dp"
+        android:layout_margin="45dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="#DDDDDD"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kuljettajatunnus"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:paddingTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kuljettajatunnus"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="6"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:textSize="28dp"
+                android:hint="000000"
+                android:textColorHint="#BABABA"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sähköposti"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kuljettajaemail"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="45dp"
+                android:background="@color/white"
+                android:hint="anssi.kuljettaja@vr.fi"
+                android:textColorHint="#BABABA"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kirjaudu"
+                android:text="Kirjaudu"
+                android:layout_marginHorizontal="100dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
